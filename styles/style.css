@@ -16,6 +16,7 @@
   padding-right: 80px;
   position: relative;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .nav {
@@ -33,8 +34,9 @@
   flex-direction: row;
   justify-content: flex-end;
   margin-top: 8px;
+  margin-bottom: 0;
   column-gap: 20px;
-  padding: 0%;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -50,14 +52,12 @@
 }
 
 .header__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
   max-width: 544px;
   margin-top: 150px;
+  margin-bottom: 0;
 }
 
 .header__description {
@@ -65,10 +65,11 @@
   line-height: 30px;
   max-width: 532px;
   margin-top: 32px;
+  margin-bottom: 0;
 }
 
 .header__image {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   max-width: 636px;
   top: 135px;
@@ -251,6 +252,8 @@
   padding-bottom: 140px;
   background-image: url(../images/staff_picks_background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .staff__title {
@@ -276,9 +279,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  padding-top: 68px;
+  margin-top: 68px;
   gap: 40px;
   list-style-type: none;
+  padding-left: 0;
 }
 .card {
   background-color: #fff;
@@ -371,6 +375,7 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  z-index: 1;
 }
 
 .about__title {
@@ -380,8 +385,7 @@
   font-weight: 500;
   z-index: 1;
   max-width: 154px;
-  padding-right: 120px;
-  z-index: 2;
+  margin-right: 120px;
 }
 
 .about__content {
@@ -392,7 +396,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  z-index: 2;
 }
 
 .about__paragraph {
@@ -404,7 +407,7 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   display: flex;
   top: -121px;
@@ -415,7 +418,7 @@
   box-sizing: border-box;
   background-color: #1f1f1f;
   min-height: 224px;
-  padding: 57px 60px 102px 80px;
+  padding: 60px 102px 60px 80px;
   font-size: 16px;
   line-height: 20px;
   position: relative;
@@ -456,7 +459,8 @@
 }
 
 .footer__column-heading {
-  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__column-link {
